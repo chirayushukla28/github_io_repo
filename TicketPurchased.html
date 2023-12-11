@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="x-apple-disable-message-reformatting" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>TicketGateway</title>
+        <style type="text/css">
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+            body {
+                font-family: "Poppins", sans-serif !important;
+            }
+
+            a,
+            a[href],
+            a:hover,
+            a:link,
+            a:visited {
+                /* This is the link colour */
+                text-decoration: none !important;
+                color: #3399ff;
+            }
+
+            .link {
+                text-decoration: underline !important;
+            }
+
+            .janPara {
+                position: relative;
+            }
+
+            .janPara:after {
+                content: "";
+                position: absolute;
+                right: 10px;
+                background-color: #c7ccd3;
+                width: 1px;
+                height: 100%;
+            }
+        </style>
+    </head>
+
+    <body style="text-align: center; margin: 0; padding-top: 10px; padding-bottom: 10px; padding-left: 0; padding-right: 0; -webkit-text-size-adjust: 100%; background-color: #e0dfdf; color: #000000;" align="center">
+        <div style="text-align: center;">
+            <table align="center" style="text-align: center; vertical-align: top; width: 600px; max-width: 600px; background: #fff; padding: 30px;" width="600">
+                <tbody>
+                    <tr>
+                        <td align="left">
+                            <img src="../../static/images/tickets/img/1.png" style="width: 219px; height: 44px;" alt="" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        {{ticket_download}}
+                        <td align="left" style="background: #ffffff; padding: 20px; margin: 0px 0; display: block;">
+                            <h1 style="font-weight: 600; font-size: 16px; line-height: 24px; letter-spacing: 0.02em; color: #000000; margin-top: 0;">Hello {{full_name}},</h1>
+                            <h5 style="font-weight: 400; font-size: 14px; line-height: 24px; margin: 0; color: #0b2338;">{{full_name}} have successfully purchased ticket(s).</h5>
+                            <p style="font-weight: 400; font-size: 12px; line-height: 17px; color: #5a6872;">
+                                {{full_name}} has subscribed for "{{event_title}}" event notification. He/she will get notify when you add/create new ticket in your event.
+                            </p>
+                            <a href="{{ticket_download}}">
+                                <button
+                                    style="
+                                        padding: 0 26px;
+                                        height: 48px;
+                                        background: linear-gradient(85.32deg, #92fe9d 3.78%, #00c9ff 101.21%);
+                                        box-shadow: 0px 0px 30px rgba(0, 255, 240, 0.2);
+                                        border-radius: 5px;
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        line-height: 21px;
+                                        text-transform: capitalize;
+                                        color: #00322e;
+                                        border: none;
+                                        cursor: pointer;
+                                    "
+                                >
+                                    Download Ticket
+                                </button>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="display: flex; background: #ffffff; border: 1px solid #e6e8ec; border-radius: 10px; padding: 20px; padding-right: 0; margin-bottom: 12px;">
+                                <img src="../../static/images/tickets/img/2.png" alt="" style="width: 137px; height: 87px; margin-right: 16px;" />
+                                <div style="width: 100%;">
+                                    <h2 style="font-weight: 600; font-size: 16px; line-height: 24px; letter-spacing: 0.02em; text-transform: capitalize; color: #0b2338; margin-top: 0; text-align: left; margin-bottom: 7px;">
+                                        Cooper Alan | Musical Show | Tickets
+                                    </h2>
+                                    <h3 style="font-weight: 400; font-size: 12px; line-height: 18px; letter-spacing: 0.02em; color: #5a6872; margin-top: 0; text-align: left; display: flex; align-items: center; margin-top: 0;">
+                                        <img src="../../static/images/tickets/img/9.svg" style="margin-right: 9px;" alt="" /> TRT Lakefront: Toronto
+                                    </h3>
+                                    <p
+                                        class="janPara"
+                                        style="font-weight: 400; font-size: 12px; line-height: 18px; letter-spacing: 0.02em; color: #5a6872; margin-top: 0; text-align: left; width: 50%; float: left; display: flex; align-items: center;"
+                                    >
+                                        <img src="../../static/images/tickets/img/11.svg" alt="" /> Jan 19 to Feb 19, 2023
+                                    </p>
+                                    <p style="font-weight: 400; font-size: 12px; line-height: 18px; letter-spacing: 0.02em; color: #5a6872; margin-top: 0; text-align: left; width: 50%; float: left; display: flex; align-items: center;">
+                                        <img src="../../static/images/tickets/img/10.svg" alt="" style="margin-right: 9px;" /> 5:00 PM - 11:00 PM
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" style="background: #ffffff; border: 1px solid #e6e8ec; border-radius: 10px; padding: 20px; display: block;">
+                            <h1 style="font-weight: 600; font-size: 16px; line-height: 24px; letter-spacing: 0.02em; color: #000000; margin-top: 0;">Customer Information</h1>
+                            <h6 style="font-weight: 400; font-size: 14px; line-height: 21px; letter-spacing: 0.02em; color: #5a6872; margin: 0; margin-bottom: 10px;">
+                                <span style="font-weight: 500; font-size: 14px; line-height: 21px; letter-spacing: 0.02em; color: #0b2338; min-width: 200px; display: inline-block;">Full Name : </span> {{full_name}}
+                            </h6>
+                            <h6 style="font-weight: 400; font-size: 14px; line-height: 21px; letter-spacing: 0.02em; color: #5a6872; margin: 0; margin-bottom: 10px;">
+                                <span style="font-weight: 500; font-size: 14px; line-height: 21px; letter-spacing: 0.02em; color: #0b2338; min-width: 200px; display: inline-block;">Email Id : </span> {{email}}
+                                <h6>
+                                    <h6 style="font-weight: 400; font-size: 14px; line-height: 21px; letter-spacing: 0.02em; color: #5a6872; margin: 0; margin-bottom: 10px;">
+                                        <span style="font-weight: 500; font-size: 14px; line-height: 21px; letter-spacing: 0.02em; color: #0b2338; min-width: 200px; display: inline-block;">Order Id :</span> {{order_number}}
+                                    </h6>
+                                    <h6 style="font-weight: 400; font-size: 14px; line-height: 21px; letter-spacing: 0.02em; color: #5a6872; margin: 0; margin-bottom: 10px;">
+                                        <span style="font-weight: 500; font-size: 14px; line-height: 21px; letter-spacing: 0.02em; color: #0b2338; min-width: 200px; display: inline-block;">Order Status : </span> {{order_status}}
+                                    </h6>
+                                    <h6 style="font-weight: 400; font-size: 14px; line-height: 21px; letter-spacing: 0.02em; color: #5a6872; margin: 0; margin-bottom: 10px; margin-bottom: 0;">
+                                        <span style="font-weight: 500; font-size: 14px; line-height: 21px; letter-spacing: 0.02em; color: #0b2338; min-width: 200px; display: inline-block;">Order Date & Time :</span> {{formatted_datetime}}
+                                    </h6>
+                                </h6>
+                            </h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" style="background: #ffffff; border: 1px solid #e6e8ec; border-radius: 10px; padding: 20px; display: block; margin: 12px 0;">
+                            <h1 style="font-weight: 600; font-size: 16px; line-height: 24px; letter-spacing: 0.02em; color: #000000; margin-top: 0;">Order Summary</h1>
+                            <div style="border-bottom: 1px solid #e6e8ec; padding-bottom: 10px; margin-bottom: 10px;">
+                                <h3 style="font-weight: 600; font-size: 12px; line-height: 24px; letter-spacing: 0.02em; text-transform: capitalize; color: #5a6872; margin: 0; margin-bottom: 5px;">Ticket Details</h3>
+                                <!--                            <h4>2 X Early Bird <span>$00 CAD</span> </h4>-->
+                                <!--                            <h4 style="margin-bottom: 0;">{{order_ticket_quantity}} X {{order_ticket_name}} <span>$36.00 CAD</span> </h4>-->
+                                <h4 style="font-weight: 400; font-size: 14px; line-height: 24px; letter-spacing: 0.02em; text-transform: capitalize; color: #0b2338; margin: 0; margin-bottom: 5px; margin-bottom: 0;">
+                                    {{tickets_list_html}}
+                                </h4>
+                            </div>
+                            <div style="border-bottom: 1px solid #e6e8ec; padding-bottom: 10px; margin-bottom: 10px;">
+                                <h3 style="font-weight: 600; font-size: 12px; line-height: 24px; letter-spacing: 0.02em; text-transform: capitalize; color: #5a6872; margin: 0; margin-bottom: 5px;">Add - Ons</h3>
+                                <h4 style="font-weight: 400; font-size: 14px; line-height: 24px; letter-spacing: 0.02em; text-transform: capitalize; color: #0b2338; margin: 0; margin-bottom: 5px;">{{addon_list_html}}<span></span></h4>
+                            </div>
+                            <div style="border-bottom: 1px solid #e6e8ec; padding-bottom: 10px; margin-bottom: 10px;">
+                                <h3 style="font-weight: 600; font-size: 12px; line-height: 24px; letter-spacing: 0.02em; text-transform: capitalize; color: #5a6872; margin: 0; margin-bottom: 5px;">Taxes & Fess</h3>
+                                <h4>Service charge<span>${{service_charge}} CAD</span></h4>
+                                <h4 style="margin-bottom: 0; font-weight: 400; font-size: 14px; line-height: 24px; letter-spacing: 0.02em; text-transform: capitalize; color: #0b2338; margin: 0; margin-bottom: 5px;">
+                                    Facility Fees<span style="float: right;">$ {{facility_fee}} CAD</span>
+                                </h4>
+                            </div>
+                            <div style="border-bottom: 1px solid #e6e8ec; padding-bottom: 10px; margin-bottom: 10px;">
+                                <h5 style="margin-bottom: 0; font-weight: 400; font-size: 14px; line-height: 24px; margin: 0; color: #0b2338;">Promo Code<span style="color: #27ae60; float: right;">$6.00 CAD</span></h5>
+                            </div>
+
+                            <p style="font-weight: 600; font-size: 14px; line-height: 24px; letter-spacing: 0.02em; text-transform: capitalize; color: #0b2338; margin: 0;">Amount Total <span style="float: right;">$50.00 CAD</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" style="margin-bottom: 20px; display: block;">
+                            <button
+                                style="
+                                    padding: 0 26px;
+                                    height: 48px;
+                                    background: linear-gradient(85.32deg, #92fe9d 3.78%, #00c9ff 101.21%);
+                                    box-shadow: 0px 0px 30px rgba(0, 255, 240, 0.2);
+                                    border-radius: 5px;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 21px;
+                                    text-transform: capitalize;
+                                    color: #00322e;
+                                    border: none;
+                                    cursor: pointer;
+                                "
+                            >
+                                Rate us
+                            </button>
+                            <div class="feedback">
+                                <h2 style="font-weight: 500; font-size: 18px; line-height: 24px; margin-bottom: 0;">Feedback on our services</h2>
+                                <p style="font-weight: 400; font-size: 12px; line-height: 17px; color: #5a6872;">Do you have any other feedback? if so, please click on below linkc</p>
+                                <a href="#">www.ticketgateway.com/feedback</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div style="background: #ffffff; border: 1px solid #e6e8ec; border-radius: 10px; padding: 20px; display: block; margin: 0px 0; margin-bottom: 20px; text-align: left;">
+                                <h2 style="font-weight: 500; font-size: 18px; line-height: 24px; letter-spacing: 0.02em; color: #000000; margin: 0; margin-bottom: 8px;">Refund policy</h2>
+                                <p style="margin: 0;">Refunds up to 7 day(s) before event</p>
+                                <a href="#" style="font-weight: 600; font-size: 16px; line-height: 24px; letter-spacing: 0.02em; color: #3399ff; display: inline-block; cursor: pointer;">Get a refund</a>
+                                <h2 style="margin-top: 15px; font-weight: 600; font-size: 16px; line-height: 24px; letter-spacing: 0.02em; text-transform: capitalize; color: #0b2338; margin-top: 0; text-align: left; margin-bottom: 7px;">
+                                    Questions about this event?
+                                </h2>
+                                <a href="" style="margin-bottom: 20px;">Contact the organizer</a>
+
+                                <div style="font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: 0.02em; color: #5a6872; margin-bottom: 10px;"><a href="">View and manage </a> your order online</div>
+                                <h2 style="font-weight: 600; font-size: 16px; line-height: 24px; letter-spacing: 0.02em; text-transform: capitalize; color: #0b2338; margin-top: 0; text-align: left; margin-bottom: 7px;">
+                                    Printable PDF tickets are attached to this mail
+                                </h2>
+
+                                <div style="font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: 0.02em; color: #5a6872;">
+                                    This order is subject to TicketGateway <a href="">Terms of service</a> , <a href="">Privacy policy</a> , and <a href=""> Cookie Policy</a> .
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../../static/images/tickets/img/1.png" style="width: 150px; height: 30px;" alt="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul style="padding: 0px; list-style-type: none;">
+                                <li style="display: inline-block; list-style-type: none; margin: 0px 10px;">
+                                    <a href="#" target="_blank">
+                                        <img src="../../static/images/tickets/img/5.svg" alt="facebook" style="height: 24px; width: 24px;" />
+                                    </a>
+                                </li>
+                                <li style="display: inline-block; list-style-type: none; margin: 0px 10px;">
+                                    <a href="#" target="_blank">
+                                        <img src="../../static/images/tickets/img/6.svg" alt="twitter" style="height: 24px; width: 24px;" />
+                                    </a>
+                                </li>
+                                <li style="display: inline-block; list-style-type: none; margin: 0px 10px;">
+                                    <a href="#" target="_blank">
+                                        <img src="../../static/images/tickets/img/7.svg" alt="instagram" style="height: 24px; width: 24px;" />
+                                    </a>
+                                </li>
+                                <li style="display: inline-block; list-style-type: none; margin: 0px 10px;">
+                                    <a href="#" target="_blank">
+                                        <img src="../../static/images/tickets/img/8.svg" alt="linkedin" style="height: 24px; width: 24px;" />
+                                    </a>
+                                </li>
+                                <li style="display: inline-block; list-style-type: none; margin: 0px 10px;">
+                                    <a href="#" target="_blank">
+                                        <img src="../../static/images/tickets/img/3.svg" alt="youtube" style="height: 24px; width: 24px;" />
+                                    </a>
+                                </li>
+                                <li style="display: inline-block; list-style-type: none; margin: 0px 10px;">
+                                    <a href="#" target="_blank">
+                                        <img src="../../static/images/tickets/img/4.svg" alt="pinterest" style="height: 24px; width: 24px;" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul style="padding: 0px; list-style-type: none;">
+                                <li style="display: inline-block; list-style-type: none; margin: 0px 5px; border-right: 1px solid #c7ccd3; padding-right: 13px;">
+                                    <a href="#" target="_blank " style="text-decoration: none; font-weight: 400; font-size: 12px; line-height: 14px; color: #5a6872;">
+                                        Support
+                                    </a>
+                                </li>
+
+                                <li style="display: inline-block; list-style-type: none; margin: 0px 5px; border-right: 1px solid #c7ccd3; padding-right: 13px;">
+                                    <a href="#" target="_blank " style="text-decoration: none; font-weight: 400; font-size: 12px; line-height: 14px; color: #5a6872;">
+                                        Legal Policy
+                                    </a>
+                                </li>
+
+                                <li style="display: inline-block; list-style-type: none; margin: 0px 5px; border-right: 1px solid #c7ccd3; padding-right: 13px; border: none;">
+                                    <a href="#" target="_blank " style="text-decoration: none; font-weight: 400; font-size: 12px; line-height: 14px; color: #5a6872;">
+                                        Contact Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
